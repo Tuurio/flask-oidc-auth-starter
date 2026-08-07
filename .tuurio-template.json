@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "sourceRepository": "Tuurio/auth_samples",
+  "sourcePath": "auth_samples_python",
+  "sourceSha": "b7582d09518ce261a97ce8daaaf52a636b4eb60f",
+  "templateId": "flask",
+  "managedFiles": [
+    {
+      "path": ".env.example",
+      "sha256": "d438e4067738dc0dcf8b6b06abfb376a43e6a974321b5c820f2c46a1edbd3b1a"
+    },
+    {
+      "path": ".github/workflows/verify.yml",
+      "sha256": "bf81472608a99e1509214e33655c80acdaa5a4df9241e9fc3234f5b4301de909"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "51d7a056fd1c89a576b3e374f02eddfaee7c8afd07aa53be240e3c762e93cc0f"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "7bd425d85fd749fe472311a254cd3b43e190a6cf45057ecbb56a2d6567eb5a83"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "README.md",
+      "sha256": "dcb461955dbe155d796a8aaa59a5d6ea6fc3d32861db2f2095187ec68a3fe47a"
+    },
+    {
+      "path": "app.py",
+      "sha256": "8e201159b7c54f7f5a696e5a5fe351b762954dc02ad70128131aab3c39705be9"
+    },
+    {
+      "path": "config.py",
+      "sha256": "33174cc05ebfb245342e6c52cabc93da9c600b124dd80c0965e05f200c7c0c9b"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "5ba60278d2c38f97d5e473fffdd8ee423dbd75c5b44275954ee4f09697ad8a79"
+    },
+    {
+      "path": "static/assets/app.css",
+      "sha256": "aff77a0590daf4d482409b4f1b329896739c44ce57fe6dae0721cf53611dcbb9"
+    },
+    {
+      "path": "static/assets/favicon.svg",
+      "sha256": "4150ed3f52dcf0d3dd7e479c76f83354b268f27f9fa2422d9d217ee51e3805dd"
+    }
+  ]
+}
