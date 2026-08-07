@@ -1,8 +1,9 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "sourceRepository": "Tuurio/auth_samples",
   "sourcePath": "auth_samples_python",
-  "sourceSha": "4230326da150f8a40dd45ecfa20bf3f556743d0e",
+  "sourceSha": "6833b4a83ac9aaa09f289f5de9d02aa1fa053e7d",
+  "packageSha256": "b493926f4fb67038b76d508c972ba66f0bea4ddd23f85cc6fb9def50e985f062",
   "templateId": "flask",
   "managedFiles": [
     {
