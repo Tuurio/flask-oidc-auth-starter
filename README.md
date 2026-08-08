@@ -42,7 +42,7 @@ This starter uses OpenID Connect Authorization Code flow. Browser and native cli
 
 # Tuurio Auth Python Demo
 
-A server-rendered Flask demo that signs in with OAuth 2.0 / OpenID Connect, keeps tokens server-side, and supports logout.
+A server-rendered Flask demo that signs in with OAuth 2.0 / OpenID Connect, keeps tokens in a server-side session, and supports logout. The local starter uses a filesystem-backed CacheLib session store; use Redis or another shared Flask-Session backend for a multi-instance production deployment.
 
 ## Integration guide
 

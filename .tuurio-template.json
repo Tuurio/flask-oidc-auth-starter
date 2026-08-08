@@ -2,8 +2,8 @@
   "schemaVersion": 2,
   "sourceRepository": "Tuurio/auth_samples",
   "sourcePath": "auth_samples_python",
-  "sourceSha": "6833b4a83ac9aaa09f289f5de9d02aa1fa053e7d",
-  "packageSha256": "b493926f4fb67038b76d508c972ba66f0bea4ddd23f85cc6fb9def50e985f062",
+  "sourceSha": "fd87414e420b10fc0ca59d5552595d1b51be6230",
+  "packageSha256": "8318a56e7057b1086fe7b2d2c4664d8c6edfad00383917982f7942d4adbcfc6a",
   "templateId": "flask",
   "managedFiles": [
     {
@@ -16,7 +16,7 @@
     },
     {
       "path": ".gitignore",
-      "sha256": "51d7a056fd1c89a576b3e374f02eddfaee7c8afd07aa53be240e3c762e93cc0f"
+      "sha256": "839b59aaaa075b94a1f8bdfcb64d6ddd4acf56d6648e081085b6fa3aacb2329b"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -28,19 +28,19 @@
     },
     {
       "path": "README.md",
-      "sha256": "dcb461955dbe155d796a8aaa59a5d6ea6fc3d32861db2f2095187ec68a3fe47a"
+      "sha256": "c8096dccff22033be6e6cf48a3e80827e57790d57b2c53ab9b8c79fcdbfaa202"
     },
     {
       "path": "app.py",
-      "sha256": "8e201159b7c54f7f5a696e5a5fe351b762954dc02ad70128131aab3c39705be9"
+      "sha256": "11e9b0da18b10e57be6161d2e2e688e6aee4360ed69f653e38505ec213030495"
     },
     {
       "path": "config.py",
-      "sha256": "33174cc05ebfb245342e6c52cabc93da9c600b124dd80c0965e05f200c7c0c9b"
+      "sha256": "832f347954b708b4959514f9847a64613bafd36a0e65ce236cc44d849e7eb1a0"
     },
     {
       "path": "requirements.txt",
-      "sha256": "5ba60278d2c38f97d5e473fffdd8ee423dbd75c5b44275954ee4f09697ad8a79"
+      "sha256": "968efe88318d87da73fc4324ad4d7303f7faf7fa71a3c4ab800121904af4f697"
     },
     {
       "path": "static/assets/app.css",

@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 from urllib.parse import urlparse
 
 from dotenv import load_dotenv
@@ -87,6 +88,10 @@ POST_LOGOUT_REDIRECT_URI = (
 SCOPE = _sanitize_scope(os.getenv("TUURIO_SCOPE")) or "openid profile email"
 
 SECRET_KEY = os.getenv("TUURIO_SESSION_SECRET", "development-only-change-before-deploy")
+SESSION_DIR = os.getenv(
+    "TUURIO_SESSION_DIR",
+    str(Path(__file__).resolve().parent / ".flask_session"),
+)
 
 WEBHOOK_ID = str(os.getenv("TUURIO_WEBHOOK_ID", "")).strip()
 WEBHOOK_URL = _normalize_url(os.getenv("TUURIO_WEBHOOK_URL")) or ""

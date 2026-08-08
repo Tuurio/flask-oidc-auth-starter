@@ -7,12 +7,22 @@ from datetime import datetime
 from urllib.parse import urlencode, urlparse
 
 from authlib.integrations.flask_client import OAuth
+from cachelib.file import FileSystemCache
 from flask import Flask, redirect, request, session, url_for
+from flask_session import Session
 
 import config
 
 app = Flask(__name__)
 app.secret_key = config.SECRET_KEY
+app.config.update(
+    SESSION_TYPE="cachelib",
+    SESSION_CACHELIB=FileSystemCache(cache_dir=config.SESSION_DIR, threshold=500),
+    SESSION_PERMANENT=False,
+    SESSION_COOKIE_HTTPONLY=True,
+    SESSION_COOKIE_SAMESITE="Lax",
+)
+Session(app)
 
 oauth = OAuth(app)
 oauth.register(
@@ -61,7 +71,6 @@ def auth_callback():
         token = oauth.tuurio.authorize_access_token()
         if not token or "access_token" not in token:
             raise RuntimeError("Missing access token.")
-        session["token"] = token
 
         metadata = oauth.tuurio.load_server_metadata()
         userinfo_endpoint = metadata.get("userinfo_endpoint")
@@ -70,9 +79,13 @@ def auth_callback():
         resp = oauth.tuurio.get(userinfo_endpoint, token=token)
         resp.raise_for_status()
         userinfo = resp.json()
+        session["token"] = token
         session["userinfo"] = userinfo
-    except Exception as exc:  # pylint: disable=broad-except
-        session["error"] = str(exc) or "Login failed."
+        session.pop("error", None)
+    except Exception:  # pylint: disable=broad-except
+        session.pop("token", None)
+        session.pop("userinfo", None)
+        session["error"] = "Login could not be completed."
     return redirect("/")
 
 
@@ -96,8 +109,8 @@ def logout():
             params["id_token_hint"] = id_token_hint
 
         return redirect(end_session + "?" + urlencode(params))
-    except Exception as exc:  # pylint: disable=broad-except
-        session["error"] = str(exc) or "Logout failed."
+    except Exception:  # pylint: disable=broad-except
+        session["error"] = "Logout could not be completed."
         return redirect("/")
 
 
