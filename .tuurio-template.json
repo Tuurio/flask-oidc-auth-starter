@@ -2,13 +2,21 @@
   "schemaVersion": 2,
   "sourceRepository": "Tuurio/auth_samples",
   "sourcePath": "auth_samples_python",
-  "sourceSha": "fd87414e420b10fc0ca59d5552595d1b51be6230",
-  "packageSha256": "8318a56e7057b1086fe7b2d2c4664d8c6edfad00383917982f7942d4adbcfc6a",
+  "sourceSha": "ee751281bb9cedc2d269c3e21e6e0d544cf2cbf8",
+  "packageSha256": "0c9a5c458ec2ce2545074ca307dfe96c2476c7e5e94843b3871296b3346a5e58",
   "templateId": "flask",
   "managedFiles": [
     {
       "path": ".env.example",
       "sha256": "d438e4067738dc0dcf8b6b06abfb376a43e6a974321b5c820f2c46a1edbd3b1a"
+    },
+    {
+      "path": ".github/social-preview.png",
+      "sha256": "8ce89795dff335a260e00ab46d7b0e20a25c21bfa4e917813788f5c1ee2413b3"
+    },
+    {
+      "path": ".github/social-preview.svg",
+      "sha256": "1b7d18e9cd70f669ffe08b3f3f76ea2eedbcd34b995a05dad894dce98913c5b9"
     },
     {
       "path": ".github/workflows/verify.yml",
@@ -28,7 +36,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "c8096dccff22033be6e6cf48a3e80827e57790d57b2c53ab9b8c79fcdbfaa202"
+      "sha256": "067f3cbbd6d769bd0c572bae62e28267cd18eb86c5a406701347b4e8677080ae"
     },
     {
       "path": "app.py",

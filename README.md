@@ -4,6 +4,8 @@ Python Flask authentication starter for Tuurio ID with server-side sessions and 
 
 [![Verify template](https://github.com/Tuurio/flask-oidc-auth-starter/actions/workflows/verify.yml/badge.svg)](https://github.com/Tuurio/flask-oidc-auth-starter/actions/workflows/verify.yml)
 
+![Flask OIDC Auth Starter social preview](.github/social-preview.png)
+
 > Generated from [`Tuurio/auth_samples/auth_samples_python`](https://github.com/Tuurio/auth_samples/tree/main/auth_samples_python). Submit implementation fixes upstream so they are not replaced by the next synchronized release.
 
 ## What you get
